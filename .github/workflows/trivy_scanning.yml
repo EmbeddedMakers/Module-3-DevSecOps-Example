@@ -35,6 +35,7 @@ jobs:
           image-ref: ${{ steps.meta.outputs.tags }}
           format: 'table'
           exit-code: '1'
+          severity: HIGH
         env:
           TRIVY_USERNAME: ${{ github.actor }}
           TRIVY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
