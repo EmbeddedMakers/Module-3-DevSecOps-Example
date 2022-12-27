@@ -15,13 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       ## Start: Version 0
-      #- name: Checkout repository
-      #  uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
       ## End: Version 0
 
 
 
-      Start: Version 1
+      ## Start: Version 1
       - name: Install dependencies
         shell: bash
         run: |
@@ -31,7 +31,7 @@ jobs:
         shell: bash
         run: |
           bandit -r .
-      End: Version 1
+      ## End: Version 1
 
 
 
